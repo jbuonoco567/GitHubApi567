@@ -17,11 +17,11 @@ print('Status Code: %d' % r.status_code)
 print('The number of repositories is %d' % len(r.json()))
 
 a = requests.get('https://api.github.com/repos/jbuonoco567/Triangle567/commits',auth=('jbuonoco567','Korae_67'))
-print('Repository 1')
+print('Repository 1: Triangle567')
 print('Status Code: %d' % a.status_code)
 print('The number of commits is %d' % len(a.json()))
 
 b = requests.get('https://api.github.com/repos/jbuonoco567/GitHubApi567/commits',auth=('jbuonoco567','Korae_67'))
-print('Repository 2')
+print('Repository 2: GitHubApi567')
 print('Status Code: %d' % b.status_code)
 print('The number of commits is %d' % len(b.json()))
